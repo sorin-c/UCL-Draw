@@ -1,9 +1,9 @@
 package com.ucldraw;
 
-import jfdata.manager.JfdataManager;
-import jfdata.model.competition.CompetitionList;
-import jfdata.model.team.Team;
-import jfdata.model.team.TeamList;
+//import jfdata.manager.JfdataManager;
+//import jfdata.model.competition.CompetitionList;
+//import jfdata.model.team.Team;
+//import jfdata.model.team.TeamList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -47,22 +47,22 @@ public class UclDrawApplication {
 
 
 
-	private static void fetchTeamData() {
-		JfdataManager jfdataManager = new JfdataManager("e1214d448af44ec3bb383cf81519dbb3");
-
-		CompetitionList competitions = jfdataManager.getAllCompetitions();
-
-		TeamList teamsByCompetition = jfdataManager.getTeamsByCompetition(UCL_ID);
-
-		for (Team team : teamsByCompetition.getTeams()) {
-			System.out.println(team);
-			System.out.println();
-		}
-
-//		for (Competition competition : competitions.getCompetitions()) {
-//			System.out.println(competition);
+//	private static void fetchTeamData() {
+//		JfdataManager jfdataManager = new JfdataManager("e1214d448af44ec3bb383cf81519dbb3");
+//
+//		CompetitionList competitions = jfdataManager.getAllCompetitions();
+//
+//		TeamList teamsByCompetition = jfdataManager.getTeamsByCompetition(UCL_ID);
+//
+//		for (Team team : teamsByCompetition.getTeams()) {
+//			System.out.println(team);
 //			System.out.println();
 //		}
-	}
+//
+////		for (Competition competition : competitions.getCompetitions()) {
+////			System.out.println(competition);
+////			System.out.println();
+////		}
+//	}
 
 }
